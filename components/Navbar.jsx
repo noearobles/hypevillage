@@ -14,11 +14,14 @@ const Navbar = () => {
         <Link href="/">Home</Link>
       </p>
       <p className="logo">
-        <Link href="/">Shoes</Link>
+        <Link href="/">Apparel</Link>
       </p>
       <p className="logo">
-        <Link href="/">Shirts</Link>
+        <Link href="/">Footwear</Link>
       </p>
+      {/* <p className="logo">
+        <Link href="/">Hats & Accessories</Link>
+      </p> */}
 
       <button type="button" className="cart-icon" onClick={() => setShowCart(true)}>
         <AiOutlineShopping />
