@@ -57,7 +57,7 @@ const ProductDetails = ({ product, products }) => {
           <h4>Details: </h4>
           <p>{details}</p>
           <h4>Sizes: </h4>
-          <div className='buttons'>
+          <div style={{width:"50%"}} className='buttons'>
           {sizes.map(item =>(
           <button type="button"  className={`add-to-cart ${selectedSize === item ? 'buy-now' : ''}`}
           onClick={() => setSelectedSize(item)} style={{width:"unset",padding:"2px 8px",marginTop:"10px"}}>{`${item}`}</button>
