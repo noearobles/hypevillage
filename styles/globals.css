@@ -22,7 +22,7 @@ margin: auto;
 width: 100%;
 }
 .layout{
-padding-inline: 5px;
+padding: 10px;
 }
 
 .navbar-container{
@@ -59,6 +59,10 @@ padding-inline: 5px;
   will-change: transform;
   animation: marquee_01 2s linear;
   width: 180%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:baseline;
   /* display: flex;
   flex-direction: column; */
 }
