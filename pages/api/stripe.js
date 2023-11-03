@@ -9,7 +9,10 @@ export default async function handler(req, res) {
         submit_type: 'pay',
         mode: 'payment',
         payment_method_types: ['card'],
-        billing_address_collection: 'auto',
+        billing_address_collection: 'required', // Collect billing address information
+        shipping_address_collection: {
+          allowed_countries: ['US'], // Specify the countries for which you want to collect shipping address
+        },
         shipping_options: [
           { shipping_rate: 'shr_1O31rnAoz6peD6vxoL9Lk0ww' },
         ],
