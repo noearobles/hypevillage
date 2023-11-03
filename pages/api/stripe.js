@@ -9,29 +9,32 @@ export default async function handler(req, res) {
         submit_type: 'pay',
         mode: 'payment',
         payment_method_types: ['card'],
-        billing_address_collection: 'auto',
+        billing_address_collection: 'required',
+        shipping_address_collection: {
+          allowed_countries: ["US"],
+        },
         shipping_options: [
           { shipping_rate: 'shr_1O31rnAoz6peD6vxoL9Lk0ww' },
         ],
         line_items: req.body.map((item) => {
           const img = item.image[0].asset._ref;
-          const newImage = img.replace('image-', 'https://cdn.sanity.io/images/lov5whyf/production/').replace('-webp', '.webp','-jpeg','.jpeg','-png','.png');
+          const newImage = img.replace('image-', 'https://cdn.sanity.io/images/lov5whyf/production/').replace('-webp', '.webp', '-jpeg', '.jpeg', '-png', '.png');
 
           return {
-            price_data: { 
+            price_data: {
               currency: 'usd',
-              product_data: { 
+              product_data: {
                 name: `${item.name} Size: ${item.selectedSize}`,
                 images: [newImage],
               },
               unit_amount: item.price * 100,
             },
             adjustable_quantity: {
-              enabled:true,
+              enabled: true,
               minimum: 1,
             },
             quantity: item.quantity,
-            tax_rates:['txr_1O33h6Aoz6peD6vxIddScjh2']
+            tax_rates: ['txr_1O33h6Aoz6peD6vxIddScjh2']
           }
         }),
         success_url: `${req.headers.origin}/success`,
