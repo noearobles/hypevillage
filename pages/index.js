@@ -5,9 +5,9 @@ import { Product, FooterBanner, HeroBanner } from '../components';
 
 const Home = ({ products, bannerData, footerBannerData }) => (
   <div>
-    <HeroBanner heroBanner={bannerData.length && bannerData[0]}  />
+    <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
     <div className="products-heading">
-      <h2>Apparel</h2>
+      <h2>Products</h2>
       {/* <p>speaker There are many variations passages</p> */}
     </div>
 
