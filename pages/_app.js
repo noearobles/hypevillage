@@ -6,6 +6,11 @@ import '../styles/globals.css';
 import { StateContext } from '../context/StateContext';
 
 function MyApp({ Component, pageProps }) {
+
+  // if (Component.getLayout) {
+  //   return Component.getLayout(<Component {...pageProps} />)
+  // }
+
   return (
     <StateContext>
       <Layout>

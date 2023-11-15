@@ -42,7 +42,7 @@ const HeroBanner = ({
         <div className="desc">
           {/* <h5>Description</h5> */}
           <p>{desc}</p>{" "}
-          <Link href={`/product`}>
+          <Link href={`/apparel`}>
             <button type="button">{buttonText}</button>
           </Link>
         </div>

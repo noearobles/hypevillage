@@ -4,7 +4,7 @@ import { AiFillInstagram, AiOutlineFacebook, AiOutlineTwitter} from 'react-icons
 const Footer = () => {
   return (
     <div className="footer-container">
-      <p>2023 HypeVillage All rights reserverd</p>
+      <p>2023 HypeVillage All rights reserverd<br></br>&#169; Developed by<a style={{textDecoration:"underline"}} href="https://noearobles.github.io/noesPortfolio"> Noe Robles</a></p>
       <p className="icons">
         <a href="https://www.instagram.com/hypevillagetx/"><AiFillInstagram /></a>
         <a href="https://www.facebook.com/HypeVillageTX/">  <AiOutlineFacebook /></a>    
