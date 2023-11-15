@@ -19,7 +19,13 @@ const Apparel = ({ products, bannerData, footerBannerData }) => (
 );
 
 export const getServerSideProps = async () => {
-    const query = '*[_type == "product"]';
+    // Specify the category you want to include
+    const category = 'Apparel';
+
+    // Construct the final query with the category filter
+    const query = `*[_type == "product" && category == "${category}"]`;
+
+    // Fetch products based on the updated query
     const products = await client.fetch(query);
 
     const bannerQuery = '*[_type == "heroBanner"]';
@@ -29,8 +35,9 @@ export const getServerSideProps = async () => {
 
     return {
         props: { products, bannerData, footerBannerData }
-    }
-}
+    };
+};
+
 export default Apparel
 
 // Apparel.getLayout = function PageLayout(page) {
