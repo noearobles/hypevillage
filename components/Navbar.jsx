@@ -10,10 +10,10 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container">
-      <label class="hamburger-menu">
+      <label className="hamburger-menu">
         <input type="checkbox" />
       </label>
-      <aside class="sidebar">
+      <aside className="sidebar">
         <nav>
           <p className="logo">
             <Link href="/">Home</Link>
