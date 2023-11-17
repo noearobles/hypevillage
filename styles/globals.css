@@ -97,7 +97,7 @@ body,
 }
 
 .sidebar p {
-  color: #324d67;
+  color: black;
 }
 
 .sidebar p:hover {
@@ -229,10 +229,6 @@ span.text-red {
   color: gray;
   font-size: 18px;
   font-weight: bolder;
-}
-
-.logo a {
-  background-color: #5f5f5f;
 }
 
 .cart-icon {
@@ -866,7 +862,7 @@ span.text-red {
 @media screen and (max-width: 800px) {
   .hero-banner-container {
     padding: 10px;
-    /* height: 560px; */
+    height: 560px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -876,16 +872,8 @@ span.text-red {
     /* width: 77%;
     height: 62%; */
     scale: 0.6;
-    top: -35%;
-    right: -35%;
-  }
-
-  .track_01 {
-    top: -45%;
-  }
-
-  .track_01 h1 {
-    display: none;
+    top: -50%;
+    right: -45%;
   }
 
   .marquee {
