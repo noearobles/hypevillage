@@ -154,7 +154,7 @@ a {
 .track {
   position: absolute;
   white-space: inherit;
- line-height: 1.2;
+  line-height: 1.2;
   will-change: transform;
   animation: marquee 15s linear infinite;
   width: 180%;
@@ -862,7 +862,7 @@ span.text-red {
 @media screen and (max-width: 800px) {
   .hero-banner-container {
     padding: 10px;
-    height: 560px;
+    /* height: 560px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -872,8 +872,16 @@ span.text-red {
     /* width: 77%;
     height: 62%; */
     scale: 0.6;
-    top: -50%;
-    right: -45%;
+    top: -30%;
+    right: -35%;
+  }
+
+  .track_01 {
+    top: -40%;
+  }
+
+  .track_01 h1 {
+    display: none;
   }
 
   .marquee {

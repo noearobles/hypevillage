@@ -23,7 +23,7 @@ const HeroBanner = ({
         <div className="track_01">
           <h2>Welcome to</h2>
           {/* <p className="beats-solo">{smallText}</p> */}
-          <h3>{midText}</h3>
+          {/* <h3>{midText}</h3> */}
           <h1>{largeText1}</h1>
           <br />
           <h1>{largeText2}</h1>
