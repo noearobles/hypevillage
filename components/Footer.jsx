@@ -14,7 +14,6 @@ const Footer = () => {
           style={{ textDecoration: "underline" }}
           href="https://noearobles.github.io/noesPortfolio"
         >
-          {" "}
           Noe Robles
         </a>
       </p>
