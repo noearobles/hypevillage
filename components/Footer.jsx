@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <p>
-        2023 HypeVillage<br></br>&#169; Developed by
+        2023 HypeVillage<br></br>&#169; Developed by{" "}
         <a
           style={{ textDecoration: "underline" }}
           href="https://noearobles.github.io/noesPortfolio"
