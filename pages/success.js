@@ -7,7 +7,7 @@ import { runFireworks } from '../lib/utils';
 
 const Success = () => {
   const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
-  
+
   useEffect(() => {
     localStorage.clear();
     setCartItems([]);
@@ -23,11 +23,11 @@ const Success = () => {
           <BsBagCheckFill />
         </p>
         <h2>Thank you for your order!</h2>
-        <p className="email-msg">Check your email inbox for the receipt.</p>
+        <p className="email-msg">Check your email inbox for your confirmation.</p>
         <p className="description">
           If you have any questions, please call
           <a className="email" href="mailto:order@example.com">
-          (956) 484-0696
+            (956) 484-0696
           </a>
         </p>
         <Link href="/">

@@ -4,7 +4,7 @@ import { client } from '../lib/client';
 import { Product, FooterBanner, HeroBanner } from '../components';
 
 const Home = ({ products, bannerData, footerBannerData }) => (
-  <div>
+  <div className='main'>
     <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
     <div className="products-heading">
       <h2>Products</h2>
