@@ -23,8 +23,6 @@ const HeroBanner = ({
     "hvTee.jpg",
     "dunks.jpg",
     "hvJerseys.jpg",
-    "abape.jpg",
-    "jordans.jpg",
   ];
 
   const handlePrev = () => {
