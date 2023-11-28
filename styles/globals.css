@@ -184,13 +184,13 @@ a {
 
 .track_01 {
   will-change: transform;
-  animation: marquee_01 2s linear;
+  animation: marquee_01 .7s linear;
 }
 
 .track_02 {
   white-space: nowrap;
   will-change: transform;
-  animation: marquee_02 2s linear;
+  animation: marquee_02 .7s linear;
   /* width: 180%; */
 }
 
